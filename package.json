@@ -1,12 +1,12 @@
 {
   "name": "ashwin",
   "version": "1.0.0",
-  "description": "Tablee server app.",
+  "description": "Mail server app.",
   "main": "app.js",
   "directories": {
     "lib": "lib"
   },
-  "script":{
+  "scripts":{
     "start":"node app.js"
   },
   "dependencies": {
