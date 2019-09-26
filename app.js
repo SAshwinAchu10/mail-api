@@ -19,7 +19,8 @@ app.post("/email", function(req, res) {
     auth: {
       user: "developer.event10@gmail.com",
       pass: "Xyz09876"
-    }
+    },
+    tls: true
   });
   console.log("saaa", req.body);
   var mailOptions = {
