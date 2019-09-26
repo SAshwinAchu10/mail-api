@@ -3,6 +3,7 @@ var bodyParser = require("body-parser");
 var nodemailer = require('nodemailer');
 
 var app = express();
+let port = process.env.PORT || process.argv[2] || 8080;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -34,6 +35,6 @@ app.post("/email", function(req, res) {
   });
 });
 
-app.listen(8000, function(response) {
+app.listen(port, function(response) {
   console.log("Running");
 });
